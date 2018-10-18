@@ -10,6 +10,7 @@ import (
 
 func main() {
 	http.HandleFunc("/apis/hello", handlers.Hello)
+	http.HandleFunc("/apis/temp", handlers.Fetch)
 
 	port := os.Getenv("PORT")
 	if port == "" {

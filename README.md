@@ -29,6 +29,11 @@ Or, run `./scripts/deploy.sh`
 
 `./scripts/dispatch.yaml`
 
+## Set wethre api key
+
+If you try `/apis/temp`, visit [here](https://openweathermap.org/) and get API keys.
+Then, run `./scripts/generate-yaml.sh`
+
 ## Check
 
 `gcloud app browse`
