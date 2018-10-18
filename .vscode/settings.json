@@ -1,0 +1,8 @@
+{
+  "go.gocodeAutoBuild": true,
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.buildOnSave": "package",
+  "go.formatTool": "goimports",
+  "go.autocompleteUnimportedPackages": true
+}
