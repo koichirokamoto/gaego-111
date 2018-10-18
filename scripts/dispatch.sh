@@ -1,6 +1,6 @@
 #! /bin/bash
 
-APPSPOT=$1
+APPSPOT=$(gcloud app describe --format="value(defaultHostname)")
 
 cat > app/servers/dispatch.yaml << EOF
 dispatch:

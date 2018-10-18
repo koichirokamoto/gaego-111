@@ -19,20 +19,22 @@ Set configurations.
 
 `gcloud init`
 
+## Generete app yaml for apis service
+
+run `./scripts/generate-yaml.sh`
+
+If you try `/apis/temp`, visit [here](https://openweathermap.org/) and get API keys.
+Then, run `./scripts/generate-yaml.sh <API keys>`
+
 ## Deploy
 
 `gcloud app deploy --version=first-app app/servers/default/app.yaml app/servers/apis/app.yaml`
 
-Or, run `./scripts/deploy.sh`
+Or, run `./scripts/deploy.sh first-app`
 
 ## Dispatch
 
 `./scripts/dispatch.yaml`
-
-## Set wethre api key
-
-If you try `/apis/temp`, visit [here](https://openweathermap.org/) and get API keys.
-Then, run `./scripts/generate-yaml.sh`
 
 ## Check
 
