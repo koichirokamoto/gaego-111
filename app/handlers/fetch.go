@@ -32,9 +32,10 @@ func Fetch(w http.ResponseWriter, r *http.Request) {
 
 	main, _, _, err := jsonparser.Get(body, "main")
 	if err != nil {
-		http.Error(w, string(body), resp.StatusCode)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
+	w.Header().Set("Content-Type", "application/json")
 	w.Write(main)
 }
